@@ -27,6 +27,7 @@ class mv3d():
 
         self.test_images1, self.test_images2,\
             self.test_dm2, self.test_labels = load_test_set(True, False)
+        self.writer = None
 
     def buildModel(self):
         self.images1 = tf.placeholder(tf.float32,
