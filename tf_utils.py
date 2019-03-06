@@ -125,7 +125,7 @@ def rescale_dm(image):
 def load_test_set(normal, bg, rad_factor=1000.0):
     print("loading test set...")
     script_path = os.path.dirname(os.path.abspath(__file__))
-    path = os.path.join(script_path, '../data')
+    path = os.path.join(script_path, 'data')
 
     test_images1 = []
     test_images2 = []
