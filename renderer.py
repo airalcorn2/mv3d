@@ -186,6 +186,9 @@ class Renderer(ShowBase):
 
             dm_uint = np.round(depth_map * self.max_16bit_val).astype('uint16')
 
+        else:
+            dm_uint = np.zeros([self.resolution, self.resolution], dtype='uint16')
+
         if self.replace_background is True and default_bg_setting is True:
             mask = (dm_uint == self.max_16bit_val)
             temp = np.multiply(
